@@ -6,11 +6,11 @@ Given(/^I open the Haleybridge Website$/, async function() {
     await testController.navigateTo(haleyPage.haleywebsite.url());
 });
 
-When(/^I am typing my search request "([^"]*)" on Haleybridge Website$/, async function(text) {
+When(/^I am typing my search request "IT Practice Lead" on Haleybridge Website$/, async function(text) {
     await testController.typeText(haleyPage.haleywebsite.searchButton(), text);
 });
 
-Then(/^I am clicking on (.*) button$/, async function(text) {
+Then(/^I am clicking on "Search" button$/, async function(text) {
     await testController.pressKey(text);
 });
 

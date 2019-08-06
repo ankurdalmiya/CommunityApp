@@ -6,7 +6,7 @@ Feature: Searching for Jobs on Haleybridge Website
 
     Given I open the Haleybridge Website
     When I am typing my search request "IT Practice Lead" on Haleybridge Website
-    Then I am clicking on enter button
+    Then I am clicking on Search button
     Then I should see the list of jobs based on my search
 
   # Scenario: Searching for Senior Java Developer in Germany on Haleybridge Website

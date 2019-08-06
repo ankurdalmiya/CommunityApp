@@ -10,7 +10,7 @@ When(/^I am typing my search request "([^"]*)" on Haleybridge Website$/, async f
     await testController.typeText(haleyPage.haleywebsite.searchButton(), text);
 });
 
-Then(/^I am clicking on (.*) button$/, async function(text) {
+Then(/^I am clicking on Search button$/, async function(text) {
     await testController.pressKey(text);
 });
 
