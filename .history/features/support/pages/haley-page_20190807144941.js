@@ -20,15 +20,7 @@ exports.haleywebsite = {
     searchLocation: function() {
         return select('#search_location');
     },
-    searchButton: function() {
-        return select('.search-value');
-    },
-    keyword: function() {
-        return Selector('.search-title').nth(0).with({boundTestRun: testController});
-    },
-    location: function() {
-        return Selector('.search-page-location').nth(0).with({boundTestRun: testController});
-    },
+   
    
     // loginButton: function() {
     //     return select('.btn.btn-primary.btn-block');

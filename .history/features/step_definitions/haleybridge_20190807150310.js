@@ -26,11 +26,6 @@ Then(/^I am clicking on Search button on page$/, async function() {
     await testController.click(haleyPage.haleywebsite.searchButton());
 });
 
-Then(/^I should see the opening for (.*) in (.*)$/, async function(text1, text2) {
-    await testController.expect(haleyPage.haleywebsite.keyword().innerText).contains(text1);
-    await testController.expect(haleyPage.haleywebsite.location().innerText).contains(text2);
-});
-
 // const gitHubRoleForExample = Role(githubPage.github.url() + 'login', async function(t) {
 //     await t
 //         .click(githubPage.github.loginButton())

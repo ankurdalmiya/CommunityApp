@@ -10,11 +10,10 @@ Feature: Searching for Jobs on Haleybridge Website
     Then I should see that first result is IT Practice Lead
 
   Scenario: Searching for Senior Java Developer in Germany on Haleybridge Website
-
-    Given I open the Haleybridge Website
+   
     When I am typing my search request "Senior Java Developer" in Search Box
-    Then Putting Location as "Germany"
-    Then I am clicking on Search button on page
+    And Putting Location as "Germany"
+    Then I am clicking on Search button
     Then I should see the opening for Senior Java Developer in Germany
 
 

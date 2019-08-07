@@ -6,7 +6,7 @@ Given(/^I open the Haleybridge Website$/, async function() {
     await testController.navigateTo(haleyPage.haleywebsite.url());
 });
 
-When(/^I am typing my search request "([^"]*)" in Search Box$/, async function(text) {
+When(/^I am typing my search request "([^"]*)" on Haleybridge Website$/, async function(text) {
     await testController.typeText(haleyPage.haleywebsite.searchTextBox(), text);
 });
 
@@ -16,19 +16,7 @@ Then(/^I am clicking on (.*) button$/, async function(text) {
 
 Then(/^I should see that first result is (.*)$/, async function(text) {
     await testController.expect(haleyPage.haleywebsite.firstSearchResult().innerText).contains(text);
-});
 
-Then(/^Putting Location as "([^"]*)"$/, async function(text) {
-    await testController.typeText(haleyPage.haleywebsite.searchLocation(), text);
-});
-
-Then(/^I am clicking on Search button on page$/, async function() {
-    await testController.click(haleyPage.haleywebsite.searchButton());
-});
-
-Then(/^I should see the opening for (.*) in (.*)$/, async function(text1, text2) {
-    await testController.expect(haleyPage.haleywebsite.keyword().innerText).contains(text1);
-    await testController.expect(haleyPage.haleywebsite.location().innerText).contains(text2);
 });
 
 // const gitHubRoleForExample = Role(githubPage.github.url() + 'login', async function(t) {
